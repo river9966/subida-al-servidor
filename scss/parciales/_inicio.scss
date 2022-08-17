@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.enlace {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+body {
+    background-color: #e6e1e1 !important;
+}
+
+.jam-menu {
+    color: white;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    .stylo__enlace {
+        text-decoration: none;
+        color: white !important;
+    }
+
+    .logo {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 120px;
+
+        .logo__img {
+            width: 250px;
+            height: 100px;
+
+        }
+    }
+
+    .nav__barra {
+        width: 60%;
+        display: flex;
+
+        .menu {
+            width: 100%;
+            justify-content: center;
+
+        }
+    }
+
+
+
+    .user {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .carrito {
+        @extend .user;
+
+    }
+}
+
+.presentacion {
+    height: auto;
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+
+    .pres__img {
+        width: 100%;
+    }
+}
+
+.titulo__seccion1 {
+    @include posiciontitilo();
+}
+
+.prod__img {
+    width: 230px;
+    height: 200px;
+}
+
+.seccion__prod-1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.seccion__prod-1 {
+    height: 300px;
+
+    .prod1 {
+        position: relative;
+        background-color: white;
+
+    }
+
+}
+
+
+
+.logito {
+    display: flex;
+    justify-content: center;
+
+    .minilogo {
+        @include positionabsolute();
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-top: 140px;
+        margin-left: 70px;
+
+    }
+
+
+}
+
+.prod1__titulo {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__prod-2 {
+    @include posiciontitilo;
+}
+
+.seccion__prod-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    text-align: center;
+
+    .prod__img2 {
+        margin-top: 40px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .prod2 {
+        height: 350px;
+        background-color: white;
+    }
+
+    .boton {
+        padding-top: 15px;
+    }
+
+}
+
+.img__cooler-caja {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .img__cooler {
+        width: 1200px;
+        height: 200px;
+    }
+
+}
+
+
+.contacto {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    .contacto__tel {
+        padding-top: 25px;
+        width: 350px;
+        background-color: #318f8e;
+        border-radius: 5px;
+        height: auto;
+
+    }
+
+    .atencion__online {
+        @extend .contacto__tel;
+    }
+
+    .horarios__atencion {
+        @extend .contacto__tel;
+    }
+}
+
+.footer {
+    gap: 50px;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding-top: 30px
+}
+
+.enlaces__footer {
+    @include styloenlaces;
+}
+
+.tamaño__text {
+    font-size: 20px;
+
+}
+
+.redes {
+    font-size: 30px;
+}
+
+.medios__pago-img {
+    width: 70px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.derechos {
+    @include posiciontitilo;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
